@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecdab150-eb5d-457f-943e-b82b8cc268eb" name="Default Changelist" comment="" />
+    <list default="true" id="ecdab150-eb5d-457f-943e-b82b8cc268eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chenyuji.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chenyuji.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/chenyuji.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/App.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
@@ -42,23 +53,32 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/git/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\idea\chenyuji\src\main\resources" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\filter" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\mapper" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\pojo" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\service\impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,11 +130,29 @@
       <workItem from="1581167187886" duration="59000" />
       <workItem from="1583247336786" duration="820000" />
       <workItem from="1583422848455" duration="2741000" />
+      <workItem from="1583557752616" duration="1281000" />
+      <workItem from="1583664463323" duration="4447000" />
+      <workItem from="1583762288471" duration="2992000" />
+      <workItem from="1583765306965" duration="1507000" />
+      <workItem from="1583847182753" duration="10690000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -128,6 +166,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/LoginController.java</url>
           <line>67</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/AdminSeviceImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

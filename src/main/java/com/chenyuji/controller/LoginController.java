@@ -46,7 +46,7 @@ public class LoginController {
         //用户的唯一标识（openid）
         String openid = (String) json.get("openid");
         //根据openid查询数据库是否有数据
-   
+
 
         String accessToken = getAccessToken(code);
         getUserInfo(accessToken,openid);
