@@ -29,6 +29,11 @@ public class AdminSeviceImpl implements AdminService {
 		return null;
 	}
 
+	@Override
+	public Admin selectByPrimaryKey(String loginId) {
+		return adminMapper.selectByPrimaryKey(loginId);
+	}
+
 	/**
 	 * 测试单机版redis的时候查询，将查询出的值放到redis缓存中
 	 */

@@ -21,8 +21,16 @@ public class AdminController {
 
 	@RequestMapping("/login")
 	@ResponseBody
-	public String login(Admin admin) {
-		System.out.println("login");
+	public String login(HttpServletRequest request) {
+		String loginId = request.getParameter("login_id");
+		Admin admin = adminService.selectByPrimaryKey(loginId);
+		String password = request.getParameter("password");
+		if (admin!=null){
+			if (!admin.getPassword().equals(password)){
+				System.out.println("zuol");
+				return "error";
+			}
+		}
 		return "success";
 	}
 	/**

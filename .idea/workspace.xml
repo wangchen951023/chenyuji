@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ecdab150-eb5d-457f-943e-b82b8cc268eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chenyuji.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chenyuji.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/AdminSeviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/AdminSeviceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/chenyuji.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/service/impl/AdminSeviceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/service/impl/AdminSeviceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,15 +72,15 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\idea\chenyuji\src\main\resources" />
-      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\filter" />
-      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\mapper" />
       <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\pojo" />
-      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\service\impl" />
+      <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\mapper" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\filter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -134,7 +136,14 @@
       <workItem from="1583664463323" duration="4447000" />
       <workItem from="1583762288471" duration="2992000" />
       <workItem from="1583765306965" duration="1507000" />
-      <workItem from="1583847182753" duration="10690000" />
+      <workItem from="1583847182753" duration="11080000" />
+      <workItem from="1583937984459" duration="4138000" />
+      <workItem from="1584019212272" duration="1702000" />
+      <workItem from="1584371779033" duration="2508000" />
+      <workItem from="1584622612303" duration="1907000" />
+      <workItem from="1584884018440" duration="4650000" />
+      <workItem from="1584975447004" duration="3859000" />
+      <workItem from="1585060541489" duration="3903000" />
     </task>
     <servers />
   </component>
@@ -169,7 +178,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java</url>
-          <line>44</line>
+          <line>52</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
