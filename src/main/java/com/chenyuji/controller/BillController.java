@@ -18,9 +18,10 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.util.WebUtils;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.util.*;
 
 @Controller
@@ -30,6 +31,39 @@ public class BillController {
     @Autowired
     BillService billService;
 
+    @RequestMapping("/showImg")
+    @ResponseBody
+    public void showImg(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        String path = request.getParameter("imgUrl");
+        //String path = "/data/webs/uploadFiles/2020-03-28/files--2020-03-28-00-40-22-qitz.png";
+        if (!"".equals(path)&&path!=null){
+            OutputStream os = response.getOutputStream();
+            File file = new File(path);
+            FileInputStream fips = new FileInputStream(file);
+            byte[] btImg = readStream(fips);
+            os.write(btImg);
+            os.flush();
+            os.close();
+        }
+
+
+    }
+    /**
+     * 读取管道中的流数据
+     */
+    public byte[] readStream(InputStream inStream) {
+        ByteArrayOutputStream bops = new ByteArrayOutputStream();
+        int data = -1;
+        try {
+            while((data = inStream.read()) != -1){
+                bops.write(data);
+            }
+            return bops.toByteArray();
+        }catch(Exception e){
+            return null;
+        }
+    }
 
     @RequestMapping("/getBillByLoginId")
     @ResponseBody
