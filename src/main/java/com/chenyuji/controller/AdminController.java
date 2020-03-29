@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 
@@ -21,17 +23,22 @@ public class AdminController {
 
 	@RequestMapping("/login")
 	@ResponseBody
-	public String login(HttpServletRequest request) {
+	public Map<String,Object> login(HttpServletRequest request) {
+		Map<String,Object> map = new HashMap<String,Object>();
 		String loginId = request.getParameter("login_id");
 		Admin admin = adminService.selectByPrimaryKey(loginId);
 		String password = request.getParameter("password");
+		map.put("status","error");
 		if (admin!=null){
-			if (!admin.getPassword().equals(password)){
-				System.out.println("zuol");
-				return "error";
+			if (admin.getPassword().equals(password)){
+
+				map.put("status","success");
+				map.put("login_id",admin.getLoginId());
 			}
 		}
-		return "success";
+
+
+		return map;
 	}
 	/**
 	 * 用户注册

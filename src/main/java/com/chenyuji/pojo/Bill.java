@@ -9,6 +9,12 @@ public class Bill {
 
     private String title;
 
+    private String amount;
+
+    private String content;
+
+    private String adminLoginId;
+
     private String url;
 
     private Date createDate;
@@ -37,6 +43,30 @@ public class Bill {
 
     public void setTitle(String title) {
         this.title = title == null ? null : title.trim();
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount == null ? null : amount.trim();
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content == null ? null : content.trim();
+    }
+
+    public String getAdminLoginId() {
+        return adminLoginId;
+    }
+
+    public void setAdminLoginId(String adminLoginId) {
+        this.adminLoginId = adminLoginId == null ? null : adminLoginId.trim();
     }
 
     public String getUrl() {

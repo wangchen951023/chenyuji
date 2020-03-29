@@ -5,12 +5,15 @@
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="type_id" property="typeId" jdbcType="INTEGER" />
     <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="amount" property="amount" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="admin_login_id" property="adminLoginId" jdbcType="VARCHAR" />
     <result column="url" property="url" jdbcType="VARCHAR" />
     <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
     <result column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, type_id, title, url, create_date, update_date
+    id, type_id, title, amount, content, admin_login_id, url, create_date, update_date
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -18,18 +21,26 @@
     from bill
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="getBillByLoginId" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from bill where admin_login_id = #{adminLoginId,jdbcType=VARCHAR} ORDER BY create_date desc
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from bill
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.chenyuji.pojo.Bill" >
     insert into bill (id, type_id, title, 
-      url, create_date, update_date
+      amount, content, admin_login_id, 
+      url
       )
     values (#{id,jdbcType=INTEGER}, #{typeId,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, 
-      #{url,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}
+      #{amount,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{adminLoginId,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR}
       )
   </insert>
+
   <insert id="insertSelective" parameterType="com.chenyuji.pojo.Bill" >
     insert into bill
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -41,6 +52,15 @@
       </if>
       <if test="title != null" >
         title,
+      </if>
+      <if test="amount != null" >
+        amount,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="adminLoginId != null" >
+        admin_login_id,
       </if>
       <if test="url != null" >
         url,
@@ -62,6 +82,15 @@
       <if test="title != null" >
         #{title,jdbcType=VARCHAR},
       </if>
+      <if test="amount != null" >
+        #{amount,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="adminLoginId != null" >
+        #{adminLoginId,jdbcType=VARCHAR},
+      </if>
       <if test="url != null" >
         #{url,jdbcType=VARCHAR},
       </if>
@@ -82,6 +111,15 @@
       <if test="title != null" >
         title = #{title,jdbcType=VARCHAR},
       </if>
+      <if test="amount != null" >
+        amount = #{amount,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="adminLoginId != null" >
+        admin_login_id = #{adminLoginId,jdbcType=VARCHAR},
+      </if>
       <if test="url != null" >
         url = #{url,jdbcType=VARCHAR},
       </if>
@@ -98,6 +136,9 @@
     update bill
     set type_id = #{typeId,jdbcType=INTEGER},
       title = #{title,jdbcType=VARCHAR},
+      amount = #{amount,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      admin_login_id = #{adminLoginId,jdbcType=VARCHAR},
       url = #{url,jdbcType=VARCHAR},
       create_date = #{createDate,jdbcType=TIMESTAMP},
       update_date = #{updateDate,jdbcType=TIMESTAMP}

@@ -2,6 +2,8 @@ package com.chenyuji.mapper;
 
 import com.chenyuji.pojo.Bill;
 
+import java.util.List;
+
 public interface BillMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,5 @@ public interface BillMapper {
     int updateByPrimaryKeySelective(Bill record);
 
     int updateByPrimaryKey(Bill record);
+    List<Bill> getBillByLoginId(String admnLoginId);
 }

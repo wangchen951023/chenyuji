@@ -5,9 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/AdminSeviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/AdminSeviceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/controller/BillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/mapper/BillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/mapper/BillMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/pojo/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/pojo/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/BillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/BillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenyuji/service/impl/BillServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/BillMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenyuji/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenyuji/service/AdminService.class" afterDir="false" />
@@ -72,15 +78,18 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\idea\chenyuji\src\main\resources" />
       <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\pojo" />
       <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
       <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\mapper" />
-      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\filter" />
+      <recent name="D:\work\idea\chenyuji\src\main\java\com\chenyuji\controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\idea\chenyuji\src\main\resources\mybatis" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.chenyuji.util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +152,12 @@
       <workItem from="1584622612303" duration="1907000" />
       <workItem from="1584884018440" duration="4650000" />
       <workItem from="1584975447004" duration="3859000" />
-      <workItem from="1585060541489" duration="3903000" />
+      <workItem from="1585060541489" duration="3905000" />
+      <workItem from="1585148928348" duration="6443000" />
+      <workItem from="1585228599587" duration="3572000" />
+      <workItem from="1585322028914" duration="6196000" />
+      <workItem from="1585375977418" duration="10320000" />
+      <workItem from="1585451061031" duration="14386000" />
     </task>
     <servers />
   </component>
@@ -178,7 +192,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/AdminController.java</url>
-          <line>52</line>
+          <line>59</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -186,7 +200,33 @@
           <line>23</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/BillController.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/BillController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/BillController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chenyuji/controller/BillController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((StandardMultipartHttpServletRequest)mRequest).multipartFiles" custom="org.springframework.web.multipart.support.StandardMultipartHttpServletRequest" />
+        <watch expression="((Request)((RequestFacade)((StandardMultipartHttpServletRequest)mRequest).request).request).attributes" custom="org.springframework.web.multipart.support.StandardMultipartHttpServletRequest,org.apache.catalina.connector.Request,org.apache.catalina.connector.RequestFacade" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
